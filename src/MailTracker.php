@@ -72,7 +72,7 @@ class MailTracker implements \Swift_Events_SendListener {
     		$html = $html . $tracking_pixel;
     	}
     	$html = str_replace($linebreak,"\n",$html);
-
+        
     	return $html;
     }
 
