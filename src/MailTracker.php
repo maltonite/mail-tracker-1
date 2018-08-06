@@ -80,7 +80,7 @@ class MailTracker implements \Swift_Events_SendListener {
     {
     	$this->hash = $hash;
 
-    	$html = preg_replace_callback("/(<a[^>]*href=['\"])([^'\"]*)/",
+    	$html = preg_replace_callback("/(<[^>]*href=['\"])([^'\"]*)/",
     			array($this, 'inject_link_callback'),
     			$html);
 
